@@ -10,4 +10,5 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'hobbies-app';
   firstName = 'Daniel';
+  lastName = 'Almanza';
 }
