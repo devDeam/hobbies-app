@@ -13,4 +13,7 @@ export class AppComponent {
   lastName = 'Almanza';
   semester = '2nd';
   hobbies = ['Video Games', 'Movies', 'Music', 'Coding', 'Traveling'];
+  series = ['The Office', 'Parks and Rec', 'Breaking Bad', 'Stranger Things', 'The Mandalorian', 'The Witcher', 'Game of Thrones',
+    'Suits', 'Friends', 'How I Met Your Mother'
+  ];
 }
