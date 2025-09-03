@@ -11,4 +11,5 @@ export class AppComponent {
   title = 'hobbies-app';
   firstName = 'Daniel';
   lastName = 'Almanza';
+  semester = '2nd';
 }
