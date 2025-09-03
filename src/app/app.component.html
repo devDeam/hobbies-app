@@ -19,10 +19,22 @@
           <li *ngFor="let hobby of hobbies">{{ hobby }}</li>
         </ul>
   </div>
-
-
-
 <h2>Series:</h2>
-<ol>
-  <li *ngFor="let serie of series">{{ serie }}</li>
-</ol>
+
+<div ngbAccordion>
+  <div ngbAccordionItem [collapsed]="false">
+    <h2 ngbAccordionHeader>
+      <button ngbAccordionButton>
+        Series favoritas
+      </button>
+    </h2>
+    <div ngbAccordionCollapse>
+      <div ngbAccordionBody>
+        <ng-template>
+          <ol>
+            <li *ngFor="let serie of series">{{ serie }}</li>
+          </ol>
+        </ng-template>
+      </div>
+  </div>
+</div>
