@@ -12,4 +12,5 @@ export class AppComponent {
   firstName = 'Daniel';
   lastName = 'Almanza';
   semester = '2nd';
+  hobbies = ['Video Games', 'Movies', 'Music', 'Coding', 'Traveling'];
 }
