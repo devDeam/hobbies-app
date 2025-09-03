@@ -3,9 +3,25 @@
 <p>Estudiante: {{ firstName }} {{ lastName }}</p>
 <p>Semestre: {{ semester }}</p>
 <h2>Hobbies:</h2>
-<ul>
-  <li *ngFor="let hobby of hobbies">{{ hobby }}</li>
-</ul>
+<p>
+  <button
+		type="button"
+		class="btn btn-outline-primary ms-2"
+		(click)="isCollapsed = !isCollapsed"
+		[attr.aria-expanded]="!isCollapsed"
+		aria-controls="collapseExample"
+	>
+		{{isCollapsed ? 'Mostrar' : 'Ocultar'}} Hobbies
+	</button>
+</p>
+  <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+        <ul>
+          <li *ngFor="let hobby of hobbies">{{ hobby }}</li>
+        </ul>
+  </div>
+
+
+
 <h2>Series:</h2>
 <ol>
   <li *ngFor="let serie of series">{{ serie }}</li>

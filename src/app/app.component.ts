@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet, CommonModule, NgbCollapseModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  isCollapsed = false;
   title = 'hobbies-app';
   firstName = 'Daniel';
   lastName = 'Almanza';
