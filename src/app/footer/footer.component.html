@@ -1,10 +1,10 @@
 <footer class="footer">
   <div class="container">
     <span>© 2025 Buena practicas de desarrollo de software. Todos los derechos reservados.</span>
-    <ul class="social-links">
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">LinkedIn</a></li>
-    </ul>
+    <div class="contact-links">
+      <span *ngFor="let link of links; let isLast = last">
+        <a [href]="link.url">{{ link.name }}</a><span *ngIf="!isLast"> | </span>
+      </span>
+    </div>
   </div>
 </footer>
