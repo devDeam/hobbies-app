@@ -1,0 +1,8 @@
+<h1>Listado de Hobbies</h1>
+<hr>
+<p>Estudiante: {{ firstName }} {{ lastName }}</p>
+<p>Semestre: {{ semester }}</p>
+<h2>Hobbies:</h2>
+<ul>
+  <li *ngFor="let hobby of hobbies">{{ hobby }}</li>
+</ul>
