@@ -1,0 +1,32 @@
+.footer {
+  background-color: #343a40; /* Color de fondo oscuro */
+  color: #fff; /* Color del texto */
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.social-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}
